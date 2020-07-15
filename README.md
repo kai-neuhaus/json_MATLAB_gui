@@ -29,7 +29,7 @@ Simply open and edit the JSON file adding new elements.
 
 Each new element is aligned in one column.
 
-If you need to start a new column you have to add an `Position` element:
+If you need to start a new column of items in the dialogue frame you have to add an `Position` element:
 
 ```
 {"type":"Position",
