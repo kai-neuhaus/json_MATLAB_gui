@@ -5,11 +5,11 @@ Well, I needed something quick and dirty and I wanted to use it also for Python.
 Do you need a dialog in MATLAB in five minutes?
 Well this could work for you if you don't have too high expectations.
 
-This hacky code is translating a simplified dialog declaration into a MATLAB GUI and also keeps the values stored.
+This hacky code is translating a simplified dialog declaration (JSON syntax) into a MATLAB GUI and also keeps the values stored (in the same JSON file).
 
-So any values you enter into the gui fields are stored for the next call.
+So any values you enter into the gui fields are stored in the JSON configuration file for the next call.
 
-To use this in your program a structure is returned with all the values.
+To use this in your program a MATLAB structure is returned with all the values.
 
 ## Quick start
 ```
