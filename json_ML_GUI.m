@@ -137,7 +137,7 @@ function params = parameter_dialog( params_in, json_fname )
         end
     end
     
-    submit_button_uicontrol(hfig,json_params_out,json_fname);
+    submit_button_uicontrol(hfig,json_params_out,json_fname, 1/y_scale);
     uiwait(hfig); % wait until dialog is closed
 
 %     get(hfig,'UserData') % object is now deleted
@@ -301,10 +301,10 @@ function Entry_Path_composite_select_new_file(src, event)
     end
 end
 
-function submit_button_uicontrol(h,json_params_out,json_fname)
+function submit_button_uicontrol(h,json_params_out,json_fname,scale)
     x_start         = 0.80;
     y_start         = 0.05;
-    height          = 0.05;
+    height          = 0.02*scale;
     text_width      = 0.15;
     path1_width     = 0.25;
     path2_width     = 0.30;
